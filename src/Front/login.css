@@ -1,0 +1,59 @@
+#box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem ;
+    gap: 1rem;
+    background:rgba(0, 0, 0, 0.8);
+    border-radius: 0.2rem;
+}
+
+#box>h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.7rem 0;
+}
+
+#box>input{
+    padding: 0.7rem;
+    width: 15rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    border: none;
+    font-weight: 600;
+    border-radius: 0.2rem;
+}
+
+#box>button{
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: none;
+    background-color: #fd0101;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 0.2rem;
+    margin: 1rem 0;
+}
+
+.children{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.children>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    color: #7e7c7c;
+    font-weight: 600;
+}
+
+.children>span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+}

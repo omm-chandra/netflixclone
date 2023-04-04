@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#signin_btn {
+    cursor: pointer;
+    background-color: #fd0101;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#none {
+    display: none;
+}
+
+#netflix_logo {
+    width: 8rem;
+    cursor: pointer;
+}
+
+#div_Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbfbfb;
+    position: relative;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#div_Center>h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    font-size: 2.5rem;
+}
+
+#div_Center>h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+
+#div_Center>h4 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+
+#email_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#email_box>input {
+    width: 25rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: none;
+    font-weight: 600;
+}
+
+#email_box>button {
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: none;
+    background-color: #fd0101;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:460px) {
+    #netflix_logo {
+        width: 6rem;
+    }
+
+    #signin_btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+        font-weight: 900;
+    }
+
+    #nav_bar {
+        padding: 1rem;
+    }
+
+    #div_Center>h1 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    #div_Center>h3 {
+        font-size: 1rem;
+    }
+
+    #email_box > input {
+        width: 15rem;
+        padding: 0.7rem;
+        font-size: 0.8rem;
+      }
+      #email_box > button {
+        padding: 0.7rem;
+        font-size: 0.8rem;
+      }
+}
+
+@media only screen and (max-width:320px) {
+    #email_box>input {
+        width: 13rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    #email_box>button {
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width:376px) {
+    #email_box>input {
+        width: 13rem;
+        padding: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    #email_box>button {
+        padding: 0.7rem;
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,68 @@
+#back_ground{
+    background-color: #111111;
+    padding: 1rem 2rem;
+}
+
+#back_ground>h2{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.row_posters{
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row_posters::-webkit-scrollbar-track{
+    display: none;
+}
+
+.row_poster{
+    max-width: 10rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.row_poster:hover{
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width:768px) {
+    .row_poster{
+        max-width: 7rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .row_poster {
+        max-width: 5rem;
+    }
+
+    #back_ground>h2 {
+        font-size: 1rem;
+    }
+
+    #bgc_img {
+        height: 40vh;
+    }
+
+    #center_div>p {
+        width: 85%;
+    }
+
+    #center_div{
+        padding-left: 1rem;
+    }
+
+    #back_ground {
+        background-color: #111111;
+        padding: 1rem 1rem;
+    }
+}

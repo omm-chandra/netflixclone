@@ -1,9 +1,18 @@
+import Home from "./Home/home";
+import { BrowserRouter,Route,Routes } from "react-router-dom";
+import FrontPage from "./Front/frontPage";
 
 function App() {
   return (
-    <div className="App">
-      <h1>NETFLIX CLONE</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<FrontPage />} />
+          <Route exact path="/Home" element={<Home />} />
+          {/* <Route exact path="/women" element={<Women />} /> */}
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
